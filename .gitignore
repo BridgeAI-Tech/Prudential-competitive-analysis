@@ -1,0 +1,29 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.local.json
+.report-access.env
+.vercel/
+
+# Client deliverables and collected data: kept out of this public repository
+**/private/report.html
+**/private/corpus.md
+**/private/narration/
+**/data/
+*.db
+*.sqlite
+*.xlsx
+*.jsonl
+report_builder/body.html
+report_builder/data.js
+report_builder/dashboard.js
+hk_maps/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local-only inputs
+media_contacts.local.json
+**/media/

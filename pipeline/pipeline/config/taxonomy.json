@@ -1,0 +1,813 @@
+{
+  "_note": "Configurable taxonomy. Add keywords here; no crawler code changes needed. Matching is case-insensitive on title + description + content. Traditional Chinese (HK) terms kept as published.",
+  "activity_types": {
+    "product_launch": {
+      "en": [
+        "launch",
+        "launches",
+        "launched",
+        "introduces",
+        "unveils",
+        "rolls out",
+        "new plan",
+        "new product",
+        "debut"
+      ],
+      "zh": [
+        "推出",
+        "全新",
+        "嶄新",
+        "隆重推出",
+        "推出",
+        "推「",
+        "推新"
+      ]
+    },
+    "product_enhancement": {
+      "en": [
+        "enhance",
+        "enhanced",
+        "enhancement",
+        "upgrade",
+        "upgraded",
+        "expands coverage",
+        "extended coverage",
+        "now covers"
+      ],
+      "zh": [
+        "提升",
+        "升級",
+        "優化",
+        "擴展保障"
+      ]
+    },
+    "partnership": {
+      "en": [
+        "partnership",
+        "partners with",
+        "partner with",
+        "collaboration",
+        "collaborates",
+        "joins hands",
+        "join hands",
+        "teams up",
+        "alliance",
+        "mou",
+        "strategic cooperation"
+      ],
+      "zh": [
+        "合作",
+        "攜手",
+        "夥伴",
+        "聯手",
+        "夥",
+        "聯同",
+        "合作夥伴"
+      ]
+    },
+    "campaign": {
+      "en": [
+        "campaign",
+        "promotion",
+        "promotional",
+        "offer",
+        "festival",
+        "brand film",
+        "ambassador",
+        "giveaway",
+        "reality show",
+        "films",
+        "brand film",
+        "lucky draw",
+        "rallies",
+        "concert",
+        "tvc",
+        "advert",
+        "talk about"
+      ],
+      "zh": [
+        "推廣",
+        "優惠",
+        "宣傳",
+        "活動",
+        "代言",
+        "抽獎"
+      ]
+    },
+    "sponsorship_community": {
+      "en": [
+        "sponsor",
+        "sponsorship",
+        "charity",
+        "community",
+        "volunteer",
+        "donation",
+        "run",
+        "hike",
+        "marathon",
+        "esg",
+        "sustainab",
+        "tennis open",
+        "hong kong open",
+        "flag day",
+        "foundation",
+        "scholarship",
+        "donate"
+      ],
+      "zh": [
+        "贊助",
+        "慈善",
+        "社區",
+        "義工",
+        "捐款",
+        "演唱會",
+        "獎學金",
+        "賣旗",
+        "捐"
+      ]
+    },
+    "award_recognition": {
+      "en": [
+        "award",
+        "awards",
+        "accolade",
+        "recognised",
+        "recognized",
+        "wins",
+        "honoured",
+        "honored",
+        "ranked"
+      ],
+      "zh": [
+        "獎",
+        "殊榮",
+        "嘉許"
+      ]
+    },
+    "corporate_announcement": {
+      "en": [
+        "appoint",
+        "appointed",
+        "appointment",
+        "ceo",
+        "results",
+        "headquarters",
+        "office",
+        "market position",
+        "market share",
+        "survey",
+        "study",
+        "report",
+        "research",
+        "index",
+        "taps",
+        "appoints",
+        "people moves",
+        "summit",
+        "convenes",
+        "lease",
+        "office space",
+        "demand",
+        "earnings call",
+        "outlook",
+        "five-year plan",
+        "policy address",
+        "welcomes"
+      ],
+      "zh": [
+        "委任",
+        "業績",
+        "總部",
+        "調查",
+        "研究",
+        "報告",
+        "租約",
+        "租賃",
+        "樓面",
+        "需求",
+        "施政報告",
+        "五年規劃"
+      ]
+    },
+    "service_enhancement": {
+      "en": [
+        "claims",
+        "service",
+        "app",
+        "digital",
+        "platform",
+        "online",
+        "self-service",
+        "chatbot",
+        "ai ",
+        "artificial intelligence",
+        "underwriting",
+        "sandbox",
+        "underwrit",
+        "direct billing",
+        "pre-authoris",
+        "upfront payment"
+      ],
+      "zh": [
+        "理賠",
+        "索償",
+        "服務",
+        "應用程式",
+        "數碼",
+        "網上",
+        "人工智能",
+        "沙盒",
+        "核保",
+        "直付"
+      ]
+    }
+  },
+  "activity_priority": [
+    "product_launch",
+    "partnership",
+    "product_enhancement",
+    "service_enhancement",
+    "campaign",
+    "sponsorship_community",
+    "award_recognition",
+    "corporate_announcement"
+  ],
+  "product_categories": {
+    "health_medical": {
+      "label": "Health & medical",
+      "en": [
+        "medical",
+        "hospital",
+        "hospitalisation",
+        "hospitalization",
+        "vhis",
+        "voluntary health",
+        "outpatient",
+        "health insurance",
+        "healthcare",
+        "doctor",
+        "clinic",
+        "telemedicine"
+      ],
+      "zh": [
+        "醫療",
+        "住院",
+        "自願醫保",
+        "門診",
+        "醫生"
+      ]
+    },
+    "critical_illness": {
+      "label": "Critical illness",
+      "en": [
+        "critical illness",
+        "cancer",
+        "heart attack",
+        "stroke",
+        "multi-claim",
+        "serious illness",
+        "early stage"
+      ],
+      "zh": [
+        "危疾",
+        "癌症",
+        "心臟病",
+        "中風",
+        "嚴重疾病"
+      ]
+    },
+    "life_protection": {
+      "label": "Life protection",
+      "en": [
+        "term life",
+        "whole life",
+        "life insurance",
+        "life protection",
+        "family protection",
+        "legacy"
+      ],
+      "zh": [
+        "人壽",
+        "終身",
+        "定期壽險",
+        "家庭保障"
+      ]
+    },
+    "retirement": {
+      "label": "Retirement",
+      "en": [
+        "retirement",
+        "annuity",
+        "annuities",
+        "qdap",
+        "deferred annuity",
+        "mpf",
+        "pension",
+        "silver",
+        "ageing",
+        "aging",
+        "longevity"
+      ],
+      "zh": [
+        "退休",
+        "年金",
+        "強積金",
+        "長者",
+        "樂齡"
+      ]
+    },
+    "savings_wealth": {
+      "label": "Savings & wealth",
+      "en": [
+        "savings",
+        "saving plan",
+        "wealth",
+        "investment-linked",
+        "ilas",
+        "high net worth",
+        "legacy planning",
+        "premium financing",
+        "dividend"
+      ],
+      "zh": [
+        "儲蓄",
+        "財富",
+        "投資相連",
+        "高淨值"
+      ]
+    },
+    "sme_corporate": {
+      "label": "SME / corporate",
+      "en": [
+        "sme",
+        "group medical",
+        "employee benefits",
+        "employer",
+        "corporate",
+        "workplace",
+        "business owner"
+      ],
+      "zh": [
+        "中小企",
+        "團體醫療",
+        "僱員福利",
+        "僱主"
+      ]
+    },
+    "wellness": {
+      "label": "Wellness",
+      "en": [
+        "wellness",
+        "wellbeing",
+        "well-being",
+        "vitality",
+        "fitness",
+        "mental health",
+        "mind health",
+        "preventive",
+        "health check",
+        "health assessment",
+        "betterme",
+        "move",
+        "steps"
+      ],
+      "zh": [
+        "健康管理",
+        "身心",
+        "精神健康",
+        "預防",
+        "體檢"
+      ]
+    },
+    "general_travel": {
+      "label": "General / travel",
+      "en": [
+        "travel",
+        "home insurance",
+        "motor",
+        "domestic helper",
+        "accident"
+      ],
+      "zh": [
+        "旅遊",
+        "家居",
+        "汽車",
+        "家傭",
+        "意外"
+      ]
+    }
+  },
+  "themes": {
+    "health_wellness": {
+      "label": "Health and wellness",
+      "en": [
+        "wellness",
+        "wellbeing",
+        "health",
+        "fitness",
+        "mental",
+        "mind health",
+        "vitality",
+        "betterme",
+        "steps",
+        "sport"
+      ],
+      "zh": [
+        "健康",
+        "身心",
+        "運動"
+      ]
+    },
+    "medical_hospitalisation": {
+      "label": "Medical / hospitalisation",
+      "en": [
+        "medical",
+        "hospital",
+        "vhis",
+        "doctor",
+        "clinic"
+      ],
+      "zh": [
+        "醫療",
+        "住院",
+        "醫生"
+      ]
+    },
+    "critical_illness": {
+      "label": "Critical illness",
+      "en": [
+        "critical illness",
+        "cancer",
+        "stroke",
+        "heart"
+      ],
+      "zh": [
+        "危疾",
+        "癌症"
+      ]
+    },
+    "life_protection": {
+      "label": "Life protection",
+      "en": [
+        "life insurance",
+        "protection",
+        "legacy"
+      ],
+      "zh": [
+        "人壽",
+        "保障"
+      ]
+    },
+    "retirement_wealth": {
+      "label": "Retirement and wealth planning",
+      "en": [
+        "retirement",
+        "annuity",
+        "wealth",
+        "savings",
+        "invest",
+        "ageing",
+        "longevity",
+        "high net worth"
+      ],
+      "zh": [
+        "退休",
+        "年金",
+        "財富",
+        "儲蓄"
+      ]
+    },
+    "family_lifestyle": {
+      "label": "Family / lifestyle",
+      "en": [
+        "family",
+        "children",
+        "parent",
+        "kids",
+        "lifestyle",
+        "travel",
+        "festival",
+        "mid-autumn",
+        "christmas"
+      ],
+      "zh": [
+        "家庭",
+        "子女",
+        "親子",
+        "旅遊"
+      ]
+    },
+    "customer_education": {
+      "label": "Customer education",
+      "en": [
+        "tips",
+        "guide",
+        "learn",
+        "how to",
+        "survey",
+        "study",
+        "research",
+        "insight",
+        "literacy"
+      ],
+      "zh": [
+        "貼士",
+        "教育",
+        "調查",
+        "研究"
+      ]
+    },
+    "corporate_sme": {
+      "label": "Corporate / SME insurance",
+      "en": [
+        "sme",
+        "employee",
+        "employer",
+        "corporate",
+        "business"
+      ],
+      "zh": [
+        "中小企",
+        "僱員",
+        "企業"
+      ]
+    },
+    "brand_awareness": {
+      "label": "Brand awareness",
+      "en": [
+        "award",
+        "brand",
+        "anniversary",
+        "ambassador",
+        "sponsor",
+        "community",
+        "charity",
+        "esg"
+      ],
+      "zh": [
+        "品牌",
+        "週年",
+        "贊助",
+        "慈善",
+        "獎"
+      ]
+    },
+    "digital_innovation": {
+      "label": "Digital services and innovation",
+      "en": [
+        "digital",
+        "app",
+        "ai",
+        "artificial intelligence",
+        "online",
+        "platform",
+        "technology",
+        "genai",
+        "chatbot",
+        "underwriter"
+      ],
+      "zh": [
+        "數碼",
+        "應用程式",
+        "人工智能",
+        "網上",
+        "科技"
+      ]
+    }
+  },
+  "digital_capabilities": {
+    "online_purchase": {
+      "label": "Online purchase / e-shop",
+      "en": [
+        "buy online",
+        "eshop",
+        "e-shop",
+        "online purchase",
+        "apply online",
+        "epurchase",
+        "get a quote",
+        "instant quote",
+        "online application"
+      ],
+      "zh": [
+        "網上投保",
+        "網上購買",
+        "立即投保"
+      ]
+    },
+    "quotation_tool": {
+      "label": "Quotation / needs calculator",
+      "en": [
+        "quote",
+        "quotation",
+        "calculator",
+        "premium calculator",
+        "needs analysis",
+        "planner"
+      ],
+      "zh": [
+        "報價",
+        "計算機"
+      ]
+    },
+    "customer_portal": {
+      "label": "Customer portal / policy management",
+      "en": [
+        "customer portal",
+        "my account",
+        "policy management",
+        "manage your policy",
+        "manage policies",
+        "login",
+        "policy details",
+        "e-policy",
+        "view your policies"
+      ],
+      "zh": [
+        "客戶平台",
+        "管理保單",
+        "登入"
+      ]
+    },
+    "digital_claims": {
+      "label": "Digital claims submission",
+      "en": [
+        "e-claim",
+        "eclaim",
+        "online claim",
+        "submit claim",
+        "claims submission",
+        "submit a claim",
+        "make a claim",
+        "claim online",
+        "digital claim",
+        "submit claims",
+        "submit your claim",
+        "claim online",
+        "online claims",
+        "e-claims",
+        "submit claims online",
+        "claims submission",
+        "file a claim online",
+        "submit a claim via",
+        "claim via"
+      ],
+      "zh": [
+        "網上索償",
+        "電子索償",
+        "提交索償",
+        "理賠"
+      ]
+    },
+    "claims_tracking": {
+      "label": "Claims tracking",
+      "en": [
+        "claim status",
+        "track your claim",
+        "claims tracking",
+        "track claims",
+        "check claim",
+        "claim progress",
+        "check claim status",
+        "claim record",
+        "track the status",
+        "claims status"
+      ],
+      "zh": [
+        "索償進度",
+        "查詢索償"
+      ]
+    },
+    "ehealth_card": {
+      "label": "eHealth / e-medical card",
+      "en": [
+        "e-medical card",
+        "ehealth card",
+        "e-card",
+        "digital medical card",
+        "medical card",
+        "e-health card",
+        "e-medical card",
+        "electronic medical card",
+        "digital card"
+      ],
+      "zh": [
+        "電子醫療卡",
+        "醫療卡"
+      ]
+    },
+    "telemedicine": {
+      "label": "Telemedicine / doctor booking",
+      "en": [
+        "telemedicine",
+        "teleconsult",
+        "video consultation",
+        "online consultation",
+        "doctor booking",
+        "book a doctor",
+        "virtual doctor",
+        "medical concierge",
+        "second opinion",
+        "teleconsultation",
+        "tele-consultation",
+        "video consultation",
+        "tele-medical",
+        "medical concierge"
+      ],
+      "zh": [
+        "遙距醫療",
+        "視像診症",
+        "預約醫生"
+      ]
+    },
+    "wellness_programme": {
+      "label": "Wellness programme / rewards",
+      "en": [
+        "wellness programme",
+        "wellness program",
+        "vitality",
+        "rewards",
+        "step challenge",
+        "betterme",
+        "health goals",
+        "aia vitality",
+        "betterme",
+        "pruhealth"
+      ],
+      "zh": [
+        "健康計劃",
+        "獎賞"
+      ]
+    },
+    "chatbot_ai": {
+      "label": "Chatbot / virtual assistant / AI",
+      "en": [
+        "chatbot",
+        "virtual assistant",
+        "chat bot",
+        "ai assistant",
+        "live chat",
+        "genai",
+        "generative ai",
+        "ai-powered"
+      ],
+      "zh": [
+        "聊天機械人",
+        "智能助理",
+        "人工智能"
+      ]
+    },
+    "financial_planning": {
+      "label": "Financial planning / fund tools",
+      "en": [
+        "fund switching",
+        "fund performance",
+        "investment choice",
+        "financial planning",
+        "wealth planning tool",
+        "portfolio"
+      ],
+      "zh": [
+        "基金轉換",
+        "投資選擇",
+        "理財"
+      ]
+    },
+    "agent_finder": {
+      "label": "Find an adviser / agent booking",
+      "en": [
+        "find an adviser",
+        "find a consultant",
+        "find an agent",
+        "financial planner",
+        "book an appointment",
+        "contact a consultant"
+      ],
+      "zh": [
+        "搵顧問",
+        "理財顧問",
+        "預約"
+      ]
+    },
+    "whatsapp_support": {
+      "label": "WhatsApp / messaging support",
+      "en": [
+        "whatsapp",
+        "wechat"
+      ],
+      "zh": [
+        "whatsapp"
+      ]
+    }
+  },
+  "hk_terms": [
+    "hong kong",
+    "hk",
+    "香港",
+    "gba",
+    "greater bay",
+    "大灣區",
+    "macau",
+    "澳門"
+  ]
+}

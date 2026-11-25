@@ -1,0 +1,56 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* ---------- Stitch design system "Executive Market Intelligence Terminal" (Google Stitch, 20 Nov 2026) ----------
+   Canvas slate-50, white surfaces, slate-200 outlines, slate-900 text; JetBrains Mono for every number and label;
+   tinted brand pills; cards lift and take the brand hue on hover; frosted lightbox.                               */
+:root:not([data-theme="dark"]) { --s-canvas:#F8FAFC; --s-surface:#FFFFFF; --s-line:#E2E8F0; --s-line2:#CBD5E1; --s-ink:#0F172A; --s-ink2:#475569; --s-ink3:#94A3B8; }
+:root[data-theme="dark"] { --s-canvas:#0B1120; --s-surface:#111827; --s-line:#1F2937; --s-line2:#334155; --s-ink:#E5E7EB; --s-ink2:#9CA3AF; --s-ink3:#6B7280; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --s-canvas:#0B1120; --s-surface:#111827; --s-line:#1F2937; --s-line2:#334155; --s-ink:#E5E7EB; --s-ink2:#9CA3AF; --s-ink3:#6B7280; } }
+body { background:var(--s-canvas) !important; }
+.mono, .ov-src b, .ov-tbl .num, .ov-cov b, .lc-meta, .lc-count b, .tiles b, .kpi b, .vg-meta span, .ov-total b { font-family:"JetBrains Mono", ui-monospace, monospace; font-feature-settings:"tnum" 1; }
+.ov-h h3, .lc-head h3, .ov-strip-h, .ov-tag, .ov-str { font-family:"JetBrains Mono", ui-monospace, monospace !important; letter-spacing:.04em; }
+.ov-card, .ov-panel, .ov-strip, .lc, .vg-card, .lc-card { box-shadow:0 1px 3px rgba(15,23,42,.04), 0 4px 12px rgba(15,23,42,.03) !important; border-color:var(--s-line) !important; }
+.ov-card:hover, .ov-panel:hover { box-shadow:0 8px 24px rgba(15,23,42,.08) !important; border-color:var(--s-line2) !important; }
+/* brand pills (Stitch tokens) */
+.bp-pill { display:inline-flex; align-items:center; gap:6px; padding:3px 10px; border-radius:9999px; font:600 12px Inter, sans-serif; border:1px solid transparent; }
+.bp-pill::before { content:""; width:7px; height:7px; border-radius:50%; background:currentColor; }
+.bp-pill.bp-prudential { background:#FDE8E9; color:#D6343C; border-color:rgba(214,52,60,.2); }
+.bp-pill.bp-aia { background:#FFF7E6; color:#A86A00; border-color:rgba(194,122,0,.2); }
+.bp-pill.bp-manulife { background:#E8F8F1; color:#13805A; border-color:rgba(26,154,108,.2); }
+.bp-pill.bp-axa { background:#EAF2FD; color:#2A78D6; border-color:rgba(42,120,214,.2); }
+/* live captures wall */
+.lc { margin:26px 0 8px; padding:22px 22px 18px; background:var(--s-surface); border:1px solid var(--s-line); border-radius:16px; }
+.lc-head { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+.lc-head h3 { margin:0 0 4px !important; font-size:14px; text-transform:uppercase; }
+.lc-head p { margin:0; color:var(--s-ink2); font-size:13.5px; }
+.lc-ico { color:#13805A; margin-right:6px; }
+.lc-count { white-space:nowrap; font:600 12px "JetBrains Mono", monospace; padding:6px 12px; border-radius:9999px; background:#E8F8F1; color:#13805A; border:1px solid rgba(26,154,108,.25); }
+.lc-filters { display:flex; flex-wrap:wrap; gap:10px 18px; margin:18px 0 16px; padding-top:14px; border-top:1px solid var(--s-line); }
+.lc-pills { display:flex; flex-wrap:wrap; gap:8px; }
+.lc-pills button { font:500 12.5px "JetBrains Mono", monospace; padding:6px 12px; border-radius:9999px; border:1px solid var(--s-line); background:var(--s-surface); color:var(--s-ink2); cursor:pointer; }
+.lc-pills button i { font-style:normal; margin-left:6px; opacity:.6; }
+.lc-pills button.on { background:var(--s-ink); color:var(--s-surface); border-color:var(--s-ink); }
+.lc-pills button.bp-pill.on { outline:2px solid currentColor; outline-offset:1px; background:inherit; }
+.lc-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:16px; }
+.lc-card { margin:0; border:1px solid var(--s-line); border-radius:12px; overflow:hidden; background:var(--s-surface); cursor:zoom-in; transition:transform .15s, box-shadow .15s, border-color .15s; }
+.lc-card:hover, .lc-card:focus { transform:translateY(-2px); box-shadow:0 8px 24px rgba(15,23,42,.08) !important; border-color:var(--s-line2) !important; outline:none; }
+.lc-img { position:relative; aspect-ratio:16/10; background:var(--s-canvas); overflow:hidden; border-bottom:1px solid var(--s-line); }
+.lc-img img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
+.lc-eye { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:26px; background:rgba(15,23,42,.28); opacity:0; transition:opacity .15s; }
+.lc-card:hover .lc-eye { opacity:1; }
+.lc-pilot { position:absolute; right:8px; top:8px; font:700 10px "JetBrains Mono", monospace; text-transform:uppercase; padding:2px 7px; border-radius:6px; background:#FFF7E6; color:#A86A00; }
+.lc-card figcaption { padding:10px 12px 12px; display:flex; flex-direction:column; gap:6px; }
+.lc-src { font-size:13px; color:var(--s-ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.lc-meta { display:flex; justify-content:space-between; font-size:11px; color:var(--s-ink3); }
+.lc-live { color:#13805A; font-weight:600; }
+.lc-more { margin:12px auto 0; display:block; }
+.lc-lb { position:fixed; inset:0; z-index:120; background:rgba(15,23,42,.6); backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:center; padding:24px; }
+.lc-lb[hidden] { display:none; }
+.lc-lb-box { position:relative; max-width:min(1100px, 96vw); max-height:92vh; overflow:auto; background:var(--s-surface); border-radius:16px; box-shadow:0 24px 48px -12px rgba(15,23,42,.25); outline:1px solid #fff; display:grid; grid-template-columns:minmax(0, 1.6fr) minmax(260px, 1fr); }
+.lc-lb-box img { width:100%; display:block; background:#000; }
+.lc-lb-t { padding:20px; } .lc-lb-t p { line-height:1.55; }
+.lc-acts { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.lc-x { position:absolute; right:10px; top:8px; z-index:2; width:34px; height:34px; border-radius:50%; border:0; background:rgba(15,23,42,.75); color:#fff; font-size:20px; cursor:pointer; }
+@media (max-width:760px) { .lc-lb-box { grid-template-columns:1fr; } .lc-head { flex-direction:column; } }
+@media print { .lc-filters, .lc-more, .lc-lb { display:none !important; } }
+</style>

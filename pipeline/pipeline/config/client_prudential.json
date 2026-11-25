@@ -1,0 +1,18 @@
+{
+  "_note": "CLIENT LAYER - analytical lens only. Shared records are never copied per client; a client references company_ids from companies.json.",
+  "client_id": "prudential_hk",
+  "client_name": "Prudential Hong Kong",
+  "reference_company_id": "PRU_HK",
+  "competitor_company_ids": ["AIA_HK", "MFC_HK", "AXA_HK"],
+  "market": "HK",
+  "window_days": 365,
+  "period_start": "2025-11-01",
+  "period_end": "2026-10-31",
+  "language_output": "en",
+  "brand_colors": {
+    "Prudential": "#ED1B2E",
+    "AIA": "#7A5C9E",
+    "Manulife": "#00A758",
+    "AXA": "#00008F"
+  }
+}

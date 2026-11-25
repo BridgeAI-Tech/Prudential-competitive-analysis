@@ -1,0 +1,205 @@
+{
+  "_note": "SHARED LAYER - Company Master. One record per insurer, reused by every client lens. Social/app identifiers verified 2026-11-06 (see Source_Validation_v0.1.xlsx).",
+  "market": "HK",
+  "companies": [
+    {
+      "company_id": "PRU_HK",
+      "brand": "Prudential",
+      "display_name": "Prudential Hong Kong",
+      "legal_entity": "Prudential Hong Kong Limited",
+      "domains": [
+        "prudential.com.hk"
+      ],
+      "keywords_en": [
+        "Prudential Hong Kong",
+        "Prudential HK",
+        "PRU"
+      ],
+      "keywords_zh": [
+        "保誠",
+        "香港保誠"
+      ],
+      "social": {
+        "facebook": {
+          "url": "https://www.facebook.com/prudentialhk",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/prudential.hongkong/",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/prudential-hong-kong-limited",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/prudentialhk",
+          "channel_id": "UC0FcaFJVwvfwIRgPJjFJaKQ",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        }
+      },
+      "apps": [
+        {
+          "name": "myPrudential",
+          "ios_id": "435695045",
+          "android_id": "com.prudential.prumobile",
+          "role": "customer"
+        }
+      ]
+    },
+    {
+      "company_id": "AIA_HK",
+      "brand": "AIA",
+      "display_name": "AIA Hong Kong",
+      "legal_entity": "AIA International Limited",
+      "domains": [
+        "aia.com.hk"
+      ],
+      "keywords_en": [
+        "AIA Hong Kong",
+        "AIA HK",
+        "AIA+"
+      ],
+      "keywords_zh": [
+        "友邦",
+        "友邦香港"
+      ],
+      "social": {
+        "facebook": {
+          "url": "https://www.facebook.com/AIAHongKong/",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/AIAHongKongMacau",
+          "verified_via": "NOT in client-validated list (brief v3) - do not collect until confirmed",
+          "status": "unvalidated"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/aia-hong-kong-&-macau",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@AIAHongKong",
+          "channel_id": "UC5hdg0RQiTsLvYNPlsCZ0kg",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        }
+      },
+      "apps": [
+        {
+          "name": "AIA+ HK",
+          "ios_id": "1292514758",
+          "android_id": "com.aiahk.idirect",
+          "role": "customer"
+        }
+      ],
+      "market_note": "Social channels cover Hong Kong and Macau (combined presence), per client note 11 Nov 2026"
+    },
+    {
+      "company_id": "MFC_HK",
+      "brand": "Manulife",
+      "display_name": "Manulife Hong Kong",
+      "legal_entity": "Manulife (International) Limited",
+      "domains": [
+        "manulife.com.hk"
+      ],
+      "keywords_en": [
+        "Manulife Hong Kong",
+        "Manulife HK"
+      ],
+      "keywords_zh": [
+        "宏利",
+        "宏利香港"
+      ],
+      "social": {
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/manulife-hong-kong-and-macau",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@Manulife_HongKong",
+          "channel_id": "UCqJZ7uH55xMJZxssgA-uUOg",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "facebook": {
+          "url": "https://www.facebook.com/manulifehongkong/",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/manulife_hongkong/",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "wechat": {
+          "url": "https://www.manulife.com.hk/en/individual/wechat.html",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        }
+      },
+      "apps": [
+        {
+          "name": "Manulife HK & Macau",
+          "ios_id": "645797935",
+          "android_id": null,
+          "role": "customer"
+        },
+        {
+          "name": "ManulifeMOVE",
+          "ios_id": "1031487052",
+          "android_id": "com.manulife.move",
+          "role": "wellness"
+        }
+      ],
+      "access_notes": "manulife.com.hk returns HTTP 403 to automated requests (incl. robots.txt). Official-site collection requires a licensed unblocker (Bright Data) subject to ToS review.",
+      "market_note": "Social channels cover Hong Kong and Macau (combined presence), per client note 11 Nov 2026"
+    },
+    {
+      "company_id": "AXA_HK",
+      "brand": "AXA",
+      "display_name": "AXA Hong Kong",
+      "legal_entity": "AXA China Region Insurance Company Limited",
+      "domains": [
+        "axa.com.hk"
+      ],
+      "keywords_en": [
+        "AXA Hong Kong",
+        "AXA HK",
+        "Emma by AXA"
+      ],
+      "keywords_zh": [
+        "安盛",
+        "安盛香港",
+        "AXA安盛"
+      ],
+      "social": {
+        "facebook": {
+          "url": "https://www.facebook.com/AXAHongKong",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/axahongkong",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/axahongkong",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/c/AXAHongKongVideos",
+          "channel_id": "UCLgUnRTPsfhvMd1-PWTlepA",
+          "verified_via": "validated by client (brief v3 s5.3, 11 Nov 2026)"
+        },
+        "xiaohongshu": {
+          "url": "http://xiaohongshu.com/user/profile/64609d2c00000000100242d5",
+          "verified_via": "linked from axa.com.hk/en"
+        }
+      },
+      "apps": [
+        {
+          "name": "Emma by AXA",
+          "ios_id": "1456962787",
+          "android_id": "com.axa.hk.emma",
+          "role": "customer"
+        }
+      ],
+      "market_note": "Social channels cover Hong Kong and Macau (combined presence), per client note 11 Nov 2026"
+    }
+  ]
+}
